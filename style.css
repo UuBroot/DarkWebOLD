@@ -16,6 +16,15 @@ header {
     text-align: center;
     color: white;
 }
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+img {
+    width: 2vw;
+    height: 2vw;
+    margin: 1vw;
+}
 #page{
     text-align: center;
     display: flex;
