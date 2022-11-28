@@ -159,5 +159,7 @@ function transition() {
 function showPussy() {
 	document.getElementById('body').innerHTML=`
 		<img src="cat.png"></img>
-	`; 
+	`;
+	let audio = new Audio('music.mp3');
+	audio.play();
 }
