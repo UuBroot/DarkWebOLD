@@ -1,5 +1,5 @@
 function getRandomWebsites() {
-    let random = Math.floor(Math.random()*2+0);
+    let random = Math.floor(Math.random()*6+0);
     console.log(random);
     switch (random) {
         case 0:
