@@ -97,7 +97,7 @@ var transHandler	= null;
 /* ==================== Transition Initiator ==================== */
 function startTransition() {
 	clearInterval(transHandler);
-	
+	showPussy(); 
 	targetColor	= generateRGB();
 	distance	= calculateDistance(currentColor, targetColor);
 	increment	= calculateIncrement(distance, fps, duration);
@@ -156,4 +156,8 @@ function transition() {
 		startTransition();
 	}
 }
-document.getElementById('button').style.display = 'none';
+function showPussy() {
+	document.getElementById('body').innerHTML=`
+		<img src="cat.png"></img>
+	`; 
+}
