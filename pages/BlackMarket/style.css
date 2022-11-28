@@ -21,6 +21,10 @@ h2 {
     align-items: center;
 }
 
+.flex {
+    display: flex;
+}
+
 .flexItem {
     width: 33.3%;
 }
