@@ -10,3 +10,7 @@ function getRandomWebsites() {
             break;
     }
 }
+
+function openFirstPage() {
+    window.open('https://uubroot.github.io/DarkWeb/pages/FavouriteColor/index.html', '_self');
+}
