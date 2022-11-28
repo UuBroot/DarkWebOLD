@@ -46,5 +46,5 @@ function login() {
 }
 
 function loadNextPage() {
-    window.open("../FavouriteColor/index.html", "_self");
+    window.open("../../FavouriteColor/index.html", "_self");
 }
