@@ -32,9 +32,19 @@ function signUp() {
 function login() {
     if (document.getElementById("userName").value == userName && document.getElementById("password").value == password) {
 
-        window.open("../FavouriteColor/index.html", "_self");
+        document.getElementById("body").innerHTML = `
+        <h1 style="color: red;">Warning</h1>
+        <br>
+        <h3>The following content might be offensive for some People (twitter users)</h3>
+        <br><br><br>
+        <center><button onclick="loadNextPage()">Proceed at my own risk</button></center>
+        `;
 
     } else {
         document.getElementById("failText").innerHTML = "Please enter the right login information!";
     }
+}
+
+function loadNextPage() {
+    window.open("../FavouriteColor/index.html", "_self");
 }
