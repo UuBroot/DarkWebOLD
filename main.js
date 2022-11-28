@@ -12,5 +12,5 @@ function getRandomWebsites() {
 }
 
 function openFirstPage() {
-    window.open('https://uubroot.github.io/DarkWeb/pages/FavouriteColor/index.html', '_self');
+    window.open('pages/Login/index.html', '_self');
 }
