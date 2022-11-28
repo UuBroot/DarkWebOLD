@@ -14,5 +14,11 @@ function getRandomWebsites() {
         case 3:
             window.open('https://uubroot.github.io/DarkWeb/pages/chinese_button/index.html', '_blank');
             break;
+        case 4:
+            window.open('https://uubroot.github.io/DarkWeb/pages/LoginFun/index.html', '_blank');
+            break;   
+        case 5:
+            window.open('https://uubroot.github.io/DarkWeb/pages/TheBestMovies/index.html', '_blank');
+            break;     
     }
 }
