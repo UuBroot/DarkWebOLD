@@ -1,5 +1,6 @@
 body {
-    background-color: white;
+    color-scheme: dark;
+    background-color: rgb(0, 0, 0);
     text-align: center;
     display: flex;
     justify-content: center;
