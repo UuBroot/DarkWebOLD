@@ -1,3 +1,3 @@
 function openFirstPage() {
-    window.open('login/index.html', '_self');
+    window.open('/pages/LoginFun/login/index.html', '_self');
 }
