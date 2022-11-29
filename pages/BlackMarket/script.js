@@ -22,3 +22,5 @@ function openItem(itemID) {
 function buy(itemID) {
     window.open('donate.html', '_blank')
 }
+
+  
