@@ -11,6 +11,8 @@ function openItem(itemID) {
     <center><img width="20%" src="img/` + itemImages[itemID] + `"></center>
     <br>
     <center><button onclick="buy(` + itemID + `)">Buy now!</button></center>
+    <br><br>
+    <center><button onclick="location.reload()">Back</button></center>
     `;
 
     document.getElementById("itemName").innerHTML = itemNames[itemID];
