@@ -167,8 +167,12 @@ function showPussy() {
 		audio.play();
 
 		setTimeout(function () {
-			popupWindow = window.open('popUp.html', 'popUpWindow', 
-			'height=500,width=500,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');
+			popupWindow = window.open('popUp.html', 'popUpWindow',
+				'height=700,width=500,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');
+			audio.pause();
+
+			let audio2 = new Audio('ominous.mp3');
+			audio2.play();
 		}, 30000);
 	}
 }
