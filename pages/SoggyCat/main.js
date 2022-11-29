@@ -1,12 +1,13 @@
+let isShowingPussy = false;
 /* ==================== Required Functions ==================== */
 // This is required to get the initial background-color of an element.
 // The element might have it's bg-color already set before the transition.
 // Transition should continue/start from this color.
 // This will be used only once.
 function getElementBG(elm) {
-	var bg	= getComputedStyle(elm).backgroundColor;
-		bg	= bg.match(/\((.*)\)/)[1];
-		bg	= bg.split(",");
+	var bg = getComputedStyle(elm).backgroundColor;
+	bg = bg.match(/\((.*)\)/)[1];
+	bg = bg.split(",");
 	for (var i = 0; i < bg.length; i++) {
 		bg[i] = parseInt(bg[i], 10);
 	}
@@ -34,9 +35,9 @@ function random() {
 
 // Generates a random RGB value.
 function generateRGB(min, max) {
-	var min		= min || 0;
-	var max		= min || 255;
-	var color	= [];
+	var min = min || 0;
+	var max = min || 255;
+	var color = [];
 	for (var i = 0; i < 3; i++) {
 		var num = random(min, max);
 		color.push(num);
@@ -58,9 +59,9 @@ function calculateDistance(colorArray1, colorArray2) {
 // Calculates the increment values for R, G, and B using distance, fps, and duration.
 // This calculation can be made in many different ways.
 function calculateIncrement(distanceArray, fps, duration) {
-	var fps			= fps || 30;
-	var duration	= duration || 1;
-	var increment	= [];
+	var fps = fps || 30;
+	var duration = duration || 1;
+	var increment = [];
 	for (var i = 0; i < distanceArray.length; i++) {
 		var incr = Math.abs(Math.floor(distanceArray[i] / (fps * duration)));
 		if (incr == 0) {
@@ -86,25 +87,25 @@ function rgb2hex(colorArray) {
 /* ==================== Setup ==================== */
 // Duration is not what it says. It's a multiplier in the calculateIncrement() function.
 // duration = 1-4, fast-to-slow
-var fps				= 30;
-var duration		= 3;
-var transElement	= document.body;
-var currentColor	= getElementBG(transElement);
-var transHandler	= null;
+var fps = 30;
+var duration = 3;
+var transElement = document.body;
+var currentColor = getElementBG(transElement);
+var transHandler = null;
 
 
 
 /* ==================== Transition Initiator ==================== */
 function startTransition() {
 	clearInterval(transHandler);
-	showPussy(); 
-	targetColor	= generateRGB();
-	distance	= calculateDistance(currentColor, targetColor);
-	increment	= calculateIncrement(distance, fps, duration);
-	
-	transHandler = setInterval(function() {
+	showPussy();
+	targetColor = generateRGB();
+	distance = calculateDistance(currentColor, targetColor);
+	increment = calculateIncrement(distance, fps, duration);
+
+	transHandler = setInterval(function () {
 		transition();
-	}, 1000/fps);
+	}, 1000 / fps);
 }
 
 /* ==================== Transition Calculator ==================== */
@@ -121,7 +122,7 @@ function transition() {
 			increment[0] = 0;
 		}
 	}
-	
+
 	// checking G
 	if (currentColor[1] > targetColor[1]) {
 		currentColor[1] -= increment[1];
@@ -134,7 +135,7 @@ function transition() {
 			increment[1] = 0;
 		}
 	}
-	
+
 	// checking B
 	if (currentColor[2] > targetColor[2]) {
 		currentColor[2] -= increment[2];
@@ -147,19 +148,22 @@ function transition() {
 			increment[2] = 0;
 		}
 	}
-	
+
 	// applying the new modified color
 	transElement.style.backgroundColor = rgb2hex(currentColor);
-	
+
 	// transition ended. start a new one
 	if (increment[0] == 0 && increment[1] == 0 && increment[2] == 0) {
 		startTransition();
 	}
 }
 function showPussy() {
-	document.getElementById('body').innerHTML=`
+	if (isShowingPussy == false) {
+		isShowingPussy = true;
+		document.getElementById('body').innerHTML = `
 		<img src="cat.png"></img>
 	`;
-	let audio = new Audio('music.mp3');
-	audio.play();
+		let audio = new Audio('music.mp3');
+		audio.play();
+	}
 }
