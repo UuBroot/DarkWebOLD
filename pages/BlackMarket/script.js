@@ -16,3 +16,19 @@ function openItem(itemID) {
 function buy(itemID) {
     window.open('donate.html', '_blank')
 }
+// When the user clicks on <div>, open the popup
+let userLocation;
+loadAlerts();
+function loadAlerts(){
+    alert("Do you like it here");
+    userLocation = prompt("Please enter your location:", "");
+    const successCallback = (position) => {
+        console.log(position);
+      };
+      const errorCallback = (error) => {
+        console.log(error);
+      };  
+      navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+}
+
+  

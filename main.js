@@ -1,3 +1,4 @@
+
 function getRandomWebsites() {
     let urls = [
         'pages/SoggyCat/index.html', 'pages/BlackMarket/index.html', 'pages/chinese_button/index.html', 'pages/LoginFun/index.html',
