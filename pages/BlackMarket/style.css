@@ -28,6 +28,10 @@ h2 {
 }
 
 .flexItem {
+    width: 33.3%;
+}
+
+.shopItem {
     width: 100%;
     border: #ffffff 5px solid;
     border-radius: 3px;
@@ -38,7 +42,7 @@ h2 {
     transition: transform 0.2s ease-out;
 }
 
-.flexItem:hover {
+.shopItem:hover {
     transform: scale(120%);
     z-index: 5;
     cursor: pointer;
