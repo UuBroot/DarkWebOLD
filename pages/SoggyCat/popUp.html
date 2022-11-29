@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP</title>
+</head>
+
+<style>
+    html {
+        color-scheme: dark;
+        background-color: black;
+        color: white;
+    }
+
+    h1, h2, h3{
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <h1>Hello, Do you wanna save ALL of your browsing data?</h1>
+    <h2>(We know your dark secret)</h2>
+
+    <br><br><br>
+    <h3>(bribe us)</h3>
+    <center>
+        <div id="donate-button-container">
+            <div id="donate-button"></div>
+            <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+            <script>
+                PayPal.Donation.Button({
+                    env: 'production',
+                    hosted_button_id: '328NG4PHQTQXW',
+                    image: {
+                        src: 'https://www.paypalobjects.com/en_US/AT/i/btn/btn_donateCC_LG.gif',
+                        alt: 'Donate with PayPal button',
+                        title: 'PayPal - The safer, easier way to pay online!',
+                    }
+                }).render('#donate-button');
+            </script>
+        </div>
+    </center>
+
+    <img width="475px" src="nailman.png" alt="nailman">
+
+</body>
+
+</html>
