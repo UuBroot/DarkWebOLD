@@ -1,4 +1,5 @@
 let isShowingPussy = false;
+let audio = new Audio('music.mp3');
 /* ==================== Required Functions ==================== */
 // This is required to get the initial background-color of an element.
 // The element might have it's bg-color already set before the transition.
@@ -162,17 +163,21 @@ function showPussy() {
 		isShowingPussy = true;
 		document.getElementById('body').innerHTML = `
 		<img src="cat.png"></img>
+		<br><br><br>
+   		<div id="main"></div>
 	`;
-		let audio = new Audio('music.mp3');
 		audio.play();
 
 		setTimeout(function () {
-			popupWindow = window.open('popUp.html', 'popUpWindow',
-				'height=700,width=500,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');
-			audio.pause();
-
-			let audio2 = new Audio('ominous.mp3');
-			audio2.play();
+			document.getElementById("main").innerHTML = `<button onclick="bribe()">Don't Click this Button</button>`;
 		}, 30000);
 	}
+}
+function bribe() {
+	popupWindow = window.open('popUp.html', 'popUpWindow',
+		'height=700,width=500,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');
+	audio.pause();
+
+	let audio2 = new Audio('ominous.mp3');
+	audio2.play();
 }
