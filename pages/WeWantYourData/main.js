@@ -7,7 +7,12 @@ function successCallback(pos) {
 function errorCallback() {
     var audio = new Audio("NotAnOption.mp3");
     audio.play();
+
+    setTimeout(function() {
+        location.reload();
+    }, 2000);
 }
 function getLocation() {
     navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+    document.getElementById("locButton").remove();
 }
