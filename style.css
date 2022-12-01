@@ -29,7 +29,11 @@ img {
     height: 2vw;
     margin: 1vw;
 }
-
+main {
+    overflow: auto;
+    height: 50vh;
+margin-top: 20vh;
+}
 #page {
     cursor: pointer;
     text-align: center;
@@ -45,6 +49,7 @@ img {
     transform: scale(100%);
     transition: transform 0.2s ease-out;
     color: white;
+
 }
 
 #page:hover {
