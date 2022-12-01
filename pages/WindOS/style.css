@@ -42,6 +42,11 @@ footer {
     height: 3vw;
     background-color: aqua;
 }
+#programms {
+    width: 3vw;
+    height: 3vw;
+    background-color: aqua;
+}
 #menu {
     position: fixed;
     background-color: aquamarine;
@@ -53,4 +58,5 @@ footer {
     animation: fadeIn 1s;
     display: none;
     padding: 100px;
+    display: flex;
 }
