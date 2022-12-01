@@ -1,4 +1,5 @@
 let body = document.getElementById("body");
+changeCursor();
 function randomNumber(){
     function getRandomInt(max) {
         return Math.floor(Math.random() * max);
