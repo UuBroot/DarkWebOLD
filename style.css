@@ -32,7 +32,10 @@ img {
 main {
     overflow: auto;
     height: 50vh;
-    margin-top: 10vh;
+}
+hr {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 #page {
     cursor: pointer;
