@@ -9,8 +9,12 @@ function randomNumber(){
 function changeCursor() {
     console.log("function call");
     let i = 0;
-  while(i < 10000){
-    body.style = 'cursor: default;'
+  while(true){
+    setTimeout(function(){
+        body.style = 'cursor: default;'
+        console.log("Switch");
+    },randomNumber())
+    
     setTimeout(function(){
         body.style = 'cursor: pointer;'
         console.log("Switch");
