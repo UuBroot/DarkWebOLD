@@ -65,12 +65,12 @@ function hasColor() {
 
 function setItems(elm, posY, posX) {
   setCardSound();
-  counter++;
   hasWon = false;
   console.log("current player is " + currentPlayer);
   console.log(gameMatrix[posY][posX]);
   if (gameMatrix[posY][posX] == 10 || gameMatrix[posY][posX] == 1) {
   } else {
+    counter++;
     gameMatrix[posY][posX] = currentPlayer;
     console.log(posX + "" + posY);
     if (currentPlayer == 1) {
