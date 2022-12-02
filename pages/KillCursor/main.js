@@ -1,5 +1,9 @@
 let body = document.getElementById("body");
 changeCursor();
+setInterval(function(){
+changeCursor();
+console.log("logging Interval");
+},10000)
 function randomNumber(){
     function getRandomInt(max) {
         return Math.floor(Math.random() * max);
@@ -9,7 +13,7 @@ function randomNumber(){
 function changeCursor() {
     console.log("function call");
     let i = 0;
-  while(true){
+  while(i < 10000){
     setTimeout(function(){
         body.style = 'cursor: default;'
         console.log("Switch");
