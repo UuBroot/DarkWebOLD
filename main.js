@@ -3,7 +3,7 @@ function getRandomWebsites() {
     let urls = [
         'pages/SoggyCat/index.html', 'pages/BlackMarket/index.html', 'pages/chinese_button/index.html', 'pages/LoginFun/index.html', 'pages/KillCursor/index.html',
         'pages/TheBestMovies/index.html', 'pages/boned/index.html', 'pages/BlueRooms/index.html', 'pages/WeWantYourData/index.html', 'pages/help/index.html',
-        'pages/WindOS/index.html'
+        'pages/WindOS/index.html', 'pages/cake/index.html'
     ];
 
 
