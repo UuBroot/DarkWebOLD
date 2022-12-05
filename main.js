@@ -11,3 +11,5 @@ function getRandomWebsites() {
     console.log(random);
     window.open(urls[random], '_blank');
 }
+
+//Test
