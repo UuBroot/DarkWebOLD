@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+h1{
+    font-size: 2.5em;
+}
+.clickable{
+    cursor: pointer;
+}
+
+img{
+    width: 30vw;
+    height: 40vh;
+}
+
+#main{
+    margin-top: 10%;
+}
+
+.youCake{
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#jumpscare{
+    width: 0%;
+    display: none;
+    animation-name: Placeholder;
+    animation-duration: 1s;
+    position: absolute;
+    top: 0vh;
+}
+
+
+@keyframes jumpscare{
+    0%{width: 0%; height: 0}
+    100%{width: 130vw; height: 130vh}
+}
