@@ -9,9 +9,9 @@ html {
 body{
     font-family: heavenly;
     font-size: 2em;
-    background-image: url('./img/glow.webp');
+    background-image: url('./img/hell.webp');
     background-size: 100%;
-    background-attachment: fixed;
+    height: 1000vh;
 }
 
 h1 {
