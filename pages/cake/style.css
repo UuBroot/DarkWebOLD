@@ -64,6 +64,15 @@ img{
     height: 100vh;
 }
 
+#the_heaven{
+    color: black; 
+    font-size: 8em; 
+    margin: 0;
+
+    animation-name: holyness;
+    animation-duration: 1s;
+}
+
 @keyframes jumpscare{
     0%{width: 0%; height: 0}
     100%{width: 130vw; height: 130vh}

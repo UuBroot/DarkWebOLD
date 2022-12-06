@@ -98,6 +98,6 @@ function painKiller(){
     setTimeout(function(){
         document.getElementById('body').style.animationName = "Placeholder"
         document.getElementById('body').style.backgroundColor = "black"
-        document.getElementById('the_holy').innerHTML = '<h1 style="color: black; font-size: 8em; margin: 0;">THE HEAVEN</h1>'
+        document.getElementById('the_holy').innerHTML = '<h1 id="the_heaven">THE HEAVEN</h1>'
     }, 6390)
 }
