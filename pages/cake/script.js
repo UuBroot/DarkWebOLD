@@ -81,4 +81,23 @@ function quotes(){
     setTimeout(function(){
         document.getElementById('body').innerHTML += "<h1>You are a lie.</h1>"
     }, 7500)
+    setTimeout(function(){
+        document.getElementById('body').innerHTML += "<h1>You are a lie.</h1>"
+    }, 11000)
+    setTimeout(function(){
+        document.getElementById('body').innerHTML += '<div onclick="painKiller()" class="killButton">Click here to kill yourself</div>'
+    }, 15000)
 }   
+
+function painKiller(){
+    document.getElementById('body').innerHTML = '<img src="microwave.gif">'
+    setTimeout(function(){
+        document.getElementById('body').innerHTML = '<div id="the_holy"></div>'
+        document.getElementById('body').style.animationName = "backgroundKiller"
+    }, 1890)
+    setTimeout(function(){
+        document.getElementById('body').style.animationName = "Placeholder"
+        document.getElementById('body').style.backgroundColor = "black"
+        document.getElementById('the_holy').innerHTML = '<h1 style="color: black; font-size: 8em; margin: 0;">THE HEAVEN</h1>'
+    }, 6390)
+}
