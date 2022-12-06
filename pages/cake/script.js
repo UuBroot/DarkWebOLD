@@ -96,8 +96,6 @@ function painKiller(){
         document.getElementById('body').style.animationName = "backgroundKiller"
     }, 1890)
     setTimeout(function(){
-        document.getElementById('body').style.animationName = "Placeholder"
-        document.getElementById('body').style.backgroundColor = "black"
-        document.getElementById('the_holy').innerHTML = '<h1 id="the_heaven">THE HEAVEN</h1>'
+        window.open('./THE_HEAVEN/heaven.html')
     }, 6390)
 }
