@@ -1,0 +1,22 @@
+html {
+    color-scheme: dark;
+    background-color: black;
+    color: white;
+}
+body {
+    text-align: center;
+
+}
+h1 {
+    font-size: 6vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+h2 {
+    font-size: 3vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+header {
+    border: 10px solid white;
+}
