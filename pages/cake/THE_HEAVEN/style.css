@@ -9,9 +9,8 @@ html {
 body{
     font-family: heavenly;
     font-size: 2em;
-    background-image: url('./img/glow.webp');
+    background-image: url('./img/hell.webp');
     background-size: 100%;
-    background-attachment: fixed;
 }
 
 h1 {
@@ -90,7 +89,10 @@ hr {
     transform: scaleX(-1);
     left: 77vw;
 }
-
+#portal{
+    position: relative;
+    margin-left: 40%;
+}
 @font-face{
     src: url('./img/Heavenly\ Script.otf');
     font-family: heavenly;
