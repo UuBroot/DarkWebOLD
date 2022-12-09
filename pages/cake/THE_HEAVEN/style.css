@@ -93,6 +93,20 @@ hr {
     position: relative;
     margin-left: 40%;
 }
+#daFunny{
+    z-index: -3;
+    opacity: 0;
+    rotate: 350deg;
+    position: absolute;
+    margin-left: 95%;
+    margin-top: 80%;
+    animation: heha 10s linear 90s;
+}
+@keyframes heha {
+    from{opacity: 0; z-index: -3;}
+    to{opacity: 100; z-index: 12;}
+    
+}
 @font-face{
     src: url('./img/Heavenly\ Script.otf');
     font-family: heavenly;
