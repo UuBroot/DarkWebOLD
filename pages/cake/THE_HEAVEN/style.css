@@ -100,7 +100,7 @@ hr {
     position: absolute;
     margin-left: 95%;
     margin-top: 80%;
-    animation: heha 10s linear 90s;
+    animation: heha 10s linear 30s;
 }
 @keyframes heha {
     from{opacity: 0; z-index: -3;}
